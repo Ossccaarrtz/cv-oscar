@@ -42,6 +42,26 @@
       .animated-image:hover {
         transform: scale(1.05) rotate(1deg);
       }
+
+      /* Rastro del mouse */
+      .cursor-trail {
+        position: fixed;
+        width: 10px;
+        height: 10px;
+        background: rgba(255, 255, 255, 0.4);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+        animation: fadeOut 0.5s ease-out forwards;
+      }
+
+      @keyframes fadeOut {
+        to {
+          opacity: 0;
+          transform: scale(2);
+        }
+      }
     </style>
   </head>
 
@@ -97,16 +117,22 @@
           </p>
           <div class="flex flex-wrap gap-4 items-center">
             <div class="flex items-center gap-2">
-              <img src="images/netbeans.jpg" class="w-6 h-6" />
-              <span class="text-sm">NetBeans</span>
+              <img src="images/netbeans.jpg" class="w-6 h-6" /><span
+                class="text-sm"
+                >NetBeans</span
+              >
             </div>
             <div class="flex items-center gap-2">
-              <img src="images/eclipse.png" class="w-6 h-6" />
-              <span class="text-sm">Eclipse</span>
+              <img src="images/eclipse.png" class="w-6 h-6" /><span
+                class="text-sm"
+                >Eclipse</span
+              >
             </div>
             <div class="flex items-center gap-2">
-              <img src="images/intellij.png" class="w-6 h-6" />
-              <span class="text-sm">IntelliJ IDEA</span>
+              <img src="images/intellij.png" class="w-6 h-6" /><span
+                class="text-sm"
+                >IntelliJ IDEA</span
+              >
             </div>
           </div>
         </div>
@@ -119,16 +145,19 @@
           </p>
           <div class="flex flex-wrap gap-4 items-center">
             <div class="flex items-center gap-2">
-              <img src="images/html.png" class="w-6 h-6" />
-              <span class="text-sm">HTML</span>
+              <img src="images/html.png" class="w-6 h-6" /><span class="text-sm"
+                >HTML</span
+              >
             </div>
             <div class="flex items-center gap-2">
-              <img src="images/css.png" class="w-6 h-6" />
-              <span class="text-sm">CSS</span>
+              <img src="images/css.png" class="w-6 h-6" /><span class="text-sm"
+                >CSS</span
+              >
             </div>
             <div class="flex items-center gap-2">
-              <img src="images/vs.png" class="w-6 h-6" />
-              <span class="text-sm">Visual Studio</span>
+              <img src="images/vs.png" class="w-6 h-6" /><span class="text-sm"
+                >Visual Studio</span
+              >
             </div>
           </div>
         </div>
@@ -141,12 +170,16 @@
           </p>
           <div class="flex flex-wrap gap-4 items-center">
             <div class="flex items-center gap-2">
-              <img src="images/cisco.png" class="w-6 h-6" />
-              <span class="text-sm">Cisco Packet Tracer</span>
+              <img src="images/cisco.png" class="w-6 h-6" /><span
+                class="text-sm"
+                >Cisco Packet Tracer</span
+              >
             </div>
             <div class="flex items-center gap-2">
-              <img src="images/topologia.png" class="w-6 h-6" />
-              <span class="text-sm">Physical Topologies</span>
+              <img src="images/topologia.png" class="w-6 h-6" /><span
+                class="text-sm"
+                >Physical Topologies</span
+              >
             </div>
           </div>
         </div>
@@ -159,16 +192,21 @@
           </p>
           <div class="flex flex-wrap gap-4 items-center">
             <div class="flex items-center gap-2">
-              <img src="images/sqlserver.png" class="w-6 h-6" />
-              <span class="text-sm">SQL Server</span>
+              <img src="images/sqlserver.png" class="w-6 h-6" /><span
+                class="text-sm"
+                >SQL Server</span
+              >
             </div>
             <div class="flex items-center gap-2">
-              <img src="images/oracle.png" class="w-6 h-6" />
-              <span class="text-sm">Oracle</span>
+              <img src="images/oracle.png" class="w-6 h-6" /><span
+                class="text-sm"
+                >Oracle</span
+              >
             </div>
             <div class="flex items-center gap-2">
-              <img src="images/vs2.png" class="w-6 h-6" />
-              <span class="text-sm">Visual Basic</span>
+              <img src="images/vs2.png" class="w-6 h-6" /><span class="text-sm"
+                >Visual Basic</span
+              >
             </div>
           </div>
         </div>
@@ -181,20 +219,25 @@
           </p>
           <div class="flex flex-wrap gap-4 items-center">
             <div class="flex items-center gap-2">
-              <img src="images/js.png" class="w-6 h-6" />
-              <span class="text-sm">JavaScript</span>
+              <img src="images/js.png" class="w-6 h-6" /><span class="text-sm"
+                >JavaScript</span
+              >
             </div>
             <div class="flex items-center gap-2">
-              <img src="images/rn.png" class="w-6 h-6" />
-              <span class="text-sm">React Native</span>
+              <img src="images/rn.png" class="w-6 h-6" /><span class="text-sm"
+                >React Native</span
+              >
             </div>
             <div class="flex items-center gap-2">
-              <img src="images/expo.png" class="w-6 h-6" />
-              <span class="text-sm">Expo</span>
+              <img src="images/expo.png" class="w-6 h-6" /><span class="text-sm"
+                >Expo</span
+              >
             </div>
             <div class="flex items-center gap-2">
-              <img src="images/firebase.png" class="w-6 h-6" />
-              <span class="text-sm">Firebase</span>
+              <img src="images/firebase.png" class="w-6 h-6" /><span
+                class="text-sm"
+                >Firebase</span
+              >
             </div>
           </div>
         </div>
@@ -231,13 +274,14 @@
       </section>
     </main>
 
+    <!-- Footer -->
     <footer
       class="text-center py-6 text-gray-500 text-sm mt-10 animate-on-scroll"
     >
       &copy; 2025 Oscar Alexander Castillo
     </footer>
 
-    <!-- Scroll-triggered animation -->
+    <!-- Scripts -->
     <script>
       const observer = new IntersectionObserver(
         (entries) => {
@@ -251,9 +295,19 @@
         },
         { threshold: 0.15, rootMargin: "0px 0px -10% 0px" }
       );
-
       document.querySelectorAll(".animate-on-scroll").forEach((el) => {
         observer.observe(el);
+      });
+
+      document.addEventListener("mousemove", (e) => {
+        const trail = document.createElement("div");
+        trail.className = "cursor-trail";
+        trail.style.left = `${e.clientX}px`;
+        trail.style.top = `${e.clientY}px`;
+        document.body.appendChild(trail);
+        setTimeout(() => {
+          trail.remove();
+        }, 500);
       });
     </script>
   </body>
