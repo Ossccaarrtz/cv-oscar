@@ -43,7 +43,7 @@ ul {
   margin-top: 2rem;
 }
 
-/* Animaciones */
+/* Animaciones de entrada */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -70,5 +70,25 @@ ul {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Efecto de rastro del mouse */
+.cursor-trail {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: rgba(111, 66, 193, 0.6); /* violeta */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(111, 66, 193, 0.9);
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(2);
   }
 }
